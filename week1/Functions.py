@@ -6,7 +6,7 @@ class Functions:
     def addString(self, str) -> None:
         self.list.append(str)
     def addDict(self, dict) -> None:
-        self.list.append(dict)
+        self.list.extend(dict.items())
     def addTuple(self, tuple) -> None:
         self.list.extend(tuple)
     def __str__(self):
